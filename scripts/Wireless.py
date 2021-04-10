@@ -38,7 +38,6 @@ system(adb + " -s " + deviceName + " shell input tap " + str(location["workstati
 sleep(1)
 
 # 通过坐标点击 健康上报
-system(adb + " -s " + deviceName + " shell input tap 200 970")
 system("adb -s " + deviceName + " shell input tap " + str(location["healthReport"][0]) + " " + str(location["healthReport"][1]))
 sleep(3)
 
